@@ -48,8 +48,24 @@ async function handleProxy(req, res, proxy) {
   proxy.web(req, res, proxyOptions);
 }
 
+const corsHeaders = [
+  "access-control-allow-origin",
+  "access-control-expose-headers",
+  "access-control-max-age",
+  "access-control-allow-credentials",
+  "access-control-allow-methods",
+  "access-control-allow-headers"
+];
+
 module.exports = async (req, res) => {
   const proxy = httpProxy.createProxyServer();
+
+  proxy.on("proxyRes", function(proxyRes, req, res) {
+    corsHeaders.forEach(header => {
+      delete proxyRes.headers[header];
+      res.removeHeader(header);
+    });
+  });
 
   try {
     await handleProxy(req, res, proxy);
