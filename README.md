@@ -28,15 +28,14 @@ $ curl -X GET -sSI "https://never-cors.now.sh/https://cdn.jsdelivr.net/npm/jquer
 # output nothing
 ```
 
-## Development
+## Deployment
 
-This project is based on Now.sh, check [here](https://zeit.co/docs/v2/deployments/basics/) for more information.
+This project is based on [Now.sh](https://zeit.co/now), check [here](https://zeit.co/docs/v2/deployments/basics/) for more information about deployment.
 
 In short,
-
 1. Download/Clone this project;
-2. Modity `now.json`, change `alias` to your own domain or delete it.
-3. Run `now` command to deploy. (Or use [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github/))
+2. Modity `now.json`: change `alias` to your own domain or delete it;
+3. Run `now` command to deploy (Or use [Now for GitHub](https://zeit.co/docs/v2/integrations/now-for-github/)).
 
 ## License
 
