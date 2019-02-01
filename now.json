@@ -6,7 +6,7 @@
     { "src": "/", "dest": "index.js" },
     { "src": "/(.*)", "dest": "proxy.js?url=$1" }
   ],
-  "regions": ["sfo1"],
+  "regions": ["all"],
   "github": {
     "enable": true,
     "autoJobCancelation": true
