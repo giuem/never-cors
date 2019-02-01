@@ -1,0 +1,25 @@
+{
+  "name": "never-cors",
+  "version": "0.0.1",
+  "description": "A serverless lambda proxy that removes CORS header",
+  "main": "index.js",
+  "repository": "git@github.com:giuem/never-cors.git",
+  "author": "giuem <giuemcom+npm@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "xo",
+    "test": "xo"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-sort-requires": "^2.1.0",
+    "prettier": "^1.16.3"
+  },
+  "dependencies": {
+    "http-errors": "^1.7.1",
+    "http-proxy": "^1.17.0",
+    "ip": "^1.1.5"
+  }
+}
