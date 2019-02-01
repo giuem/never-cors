@@ -6,6 +6,7 @@
     { "src": "/", "dest": "index.js" },
     { "src": "/(.*)", "dest": "proxy.js?url=$1" }
   ],
+  "alias": ["never-cors.now.sh"],
   "regions": ["all"],
   "github": {
     "enable": true,
